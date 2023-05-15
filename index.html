@@ -150,17 +150,20 @@
 						</header>
 						<div class="content">
 							<div class="form">
-								<form name="contact" method="POST" data-netlify="true">
+								<form action="POST" data-netlify="true">
 									<div class="fields">
 										<div class="field half">
-											<input name="name" id="name" placeholder="Your Name" type="text" />
+											<input name="name" id="name" placeholder="Name" type="text" />
 										</div>
 										<div class="field half">
-											<input name="email" id="email" placeholder="Your Email" type="email" />
+											<input name="email" id="email" placeholder="Email" type="email" />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" rows="6" placeholder="What kind of alteration work are you looking to get done?"></textarea>
+											<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
 										</div>
+									</div>
+									<div class="field">
+										<div data-netlify-recaptcha="true"></div>
 									</div>
 									<ul class="actions special">
 										<li><input type="button" class="button" value="Send Message" /></li>
@@ -187,7 +190,7 @@
 						</div>
 					</div>
 					<div class="copyright">
-						&copy;2023 Harman Randhawa. All rights reserved.
+						&copy;2023 Harman Randhawa All rights reserved.
 					</div>
 				</div>
 			</div>
